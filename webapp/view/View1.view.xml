@@ -1,0 +1,38 @@
+<mvc:View controllerName="employeede.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:form="sap.ui.layout.form"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+      <Panel id="panelEmployeeDetails" headerText="Employee Details">
+      <form:SimpleForm id="formEmployee">
+        <form:toolbar>
+        <Toolbar id="tbActions">
+          <Button id="btnRead" text="Read" press="onPressRead"/>
+          <Button id="btnCreate" text="Create" press="onPressCreate"/>
+          <Button id="btnUpdate" text="Update" press="onPressUpdate"/>
+          <Button id="btnDelete" text="Delete" press="onPressDelete"/>
+          <Button id="btnQuery" text="Query" press="onPressQuery"/>
+        </Toolbar>
+        </form:toolbar>
+        <form:content>
+          <Label id="lblFirstName" text ="First Name"/>
+          <Input id="inFirstName" value="{FirstName}" />
+          <Label id="lblLastName" text ="Last Name"/>
+          <Input id="inLastName" value="{LastName}" />
+           <Label id="lblSearch" text ="Search"/>
+          <Input id="inSearch"  />
+        </form:content>
+      </form:SimpleForm>
+      </Panel>
+      <Panel id="panelEmployee" headerText="Employees">
+      <List id="listEmployee" 
+            items="{/Employees}" 
+            selectionChange="onSelectEmployee" 
+            mode="SingleSelect">
+        <StandardListItem 
+          id = "listItem"
+          title = "{FirstName} {LastName} - {Position}" />
+      </List>
+      </Panel>
+    </Page>
+</mvc:View>

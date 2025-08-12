@@ -1,0 +1,62 @@
+[
+    {
+        "EmployeeID": 123456,
+        "FirstName": "John",
+        "LastName": "Doe",
+        "Position": "Team Lead"
+    },
+    {
+        "EmployeeID": 223994,
+        "FirstName": "Adam",
+        "LastName": "Anderson",
+        "Position": "Analyst"
+    },
+    {
+        "EmployeeID": 2099466955,
+        "FirstName": "Bea",
+        "LastName": "Belle",
+        "Position": "Analyst"
+    },
+    {
+        "EmployeeID": 1199466190,
+        "FirstName": "Caleb",
+        "LastName": "Carter",
+        "Position": "Associate Manager"
+    },
+    {
+        "EmployeeID": 1199466954,
+        "FirstName": "Ethan",
+        "LastName": "Edwards",
+        "Position": "Senior Analyst"
+    },
+    {
+        "EmployeeID": 1199466955,
+        "FirstName": "Fiona",
+        "LastName": "Fisher",
+        "Position": "Associate"
+    },
+    {
+        "EmployeeID": 863386795,
+        "FirstName": "Gavin",
+        "LastName": "Grant",
+        "Position": "Analyst"
+    },
+    {
+        "EmployeeID": 1479297959,
+        "FirstName": "Hannah",
+        "LastName": "Hughes",
+        "Position": "Associate"
+    },
+    {
+        "EmployeeID": 1763203827,
+        "FirstName": "Isaac",
+        "LastName": "Ingram",
+        "Position": "Associate"
+    },
+    {
+        "EmployeeID": 998507673,
+        "FirstName": "Julia",
+        "LastName": "Jensen",
+        "Position": "Associate"
+    }
+]
