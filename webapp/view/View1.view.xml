@@ -28,7 +28,7 @@
       <List id="listEmployee" 
             items="{/Employees}" 
             selectionChange="onSelectEmployee" 
-            mode="SingleSelect">
+            mode="SingleSelectMaster">
         <StandardListItem 
           id = "listItem"
           title = "{FirstName} {LastName} - {Position}" />

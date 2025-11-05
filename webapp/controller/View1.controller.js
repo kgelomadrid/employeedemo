@@ -101,17 +101,21 @@ sap.ui.define([
             }
 
             //Trigger HTTP GET operation (with Filter)
-            var oModel = this.getOwnerComponent().getModel();
-            var sFilterEntity = "/Employees"
-            oModel.read(sFilterEntity,{
-                filters: aFilter,
-                success: function (data) {
+            // var oModel = this.getOwnerComponent().getModel();
+            // var sFilterEntity = "/Employees"
+            // oModel.read(sFilterEntity,{
+            //     filters: aFilter,
+            //     success: function (data) {
 
-                },
-                error: function (data){
+            //     },
+            //     error: function (data){
 
-                }
-            })
+            //     }
+            // })
+
+            const oList = oView.byId("listEmployee");
+            const oBinding = oList.getBinding("items");
+            oBinding.filter(aFilter);
         },
         onPressCreate: function(oEvent){
             var oModel = this.getOwnerComponent().getModel();
